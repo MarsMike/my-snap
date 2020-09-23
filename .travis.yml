@@ -31,7 +31,8 @@ addons:
 
 script:
   - sudo usermod --append --groups lxd $USER
-  - sudo /snap/bin/lxd.migrate -yes
+  # does not work on arm64-graviton2
+  # - sudo /snap/bin/lxd.migrate -yes
   - sudo /snap/bin/lxd waitready
   - sudo /snap/bin/lxd init --auto
   - 'if [ -n "$SOURCE_TAG" ]; then sed -i "s/source-branch.*/source-tag: $SOURCE_TAG/" snap/snapcraft.yaml ; fi'
