@@ -1,5 +1,9 @@
+os: linux
+dist: focal
+group: edge
+arch: arm64-graviton2
+
 language: shell
-dist: xenial
 
 # SNAPCRAFT_IMAGE_INFO - build traceability
 # SNAPCRAFT_BUILD_INFO - build manifest and security notifications (https://snapcraft.io/blog/introducing-developer-notifications-for-snap-security-updates)
