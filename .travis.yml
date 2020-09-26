@@ -50,3 +50,5 @@ after_failure:
 #  channel: ${SNAP_DEPLOY_TRACK:-latest}/edge
 #  cleanup: false
 #  skip_cleanup: true
+
+# test from codespaces
